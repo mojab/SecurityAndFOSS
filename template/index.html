@@ -43,21 +43,25 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#about">درباره هکاتون</a>
-            </li>
-            <li><a href="#services">برنامه‌ها</a>
-            </li>
-            <li><a href="#contact">تماس</a>
-            </li>
-          </ul>
+          <div id="navigation-bar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#home">خانه</a></li>
+              <li><a href="#whats">هکاتون چیست</a></li>
+              <li><a href="#plans">برنامه‌ها</a></li>
+              <li><a href="#timeline">خط زمانی</a></li>
+              <li><a href="#media">رسانه</a></li>
+              <li><a href="#register">ثبت‌نام</a></li>
+              <li><a href="#sponsors">حامیان</a></li>
+              <li><a href="#map">موقعیت</a></li>
+            </ul>
+          </div>
         </div>
         <!-- /.navbar-collapse -->
       </div>
       <!-- /.container -->
     </nav>
 
-    <div class="intro-header">
+    <div class="intro-header" id="home">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -88,7 +92,7 @@
     </div>
     <!-- /.intro-header -->
 
-    <div class="content-section-b">
+    <div class="content-section-b" id="whats">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12 text-center" style="margin: 0px 0px 30px 0px;">
@@ -109,7 +113,7 @@
             <img src="img/icons/fork.png" alt="" />
             <h4>غذا می‌خوریم</h4>
             <p>هکاتون بدون خوردن ماکارونی اونم دورهمی معنایی نداره.
-            حالا اگه ماکارونی پیدا نشد یک نفر دیگه‌ای می‌کنیم.</p>
+            حالا اگه ماکارونی پیدا نشد یک فکر دیگه‌ای می‌کنیم.</p>
           </div>
           <div class="col-md-4 col-sm-4 col-xs-12 text-center">
             <img src="img/icons/app_window.png" alt="" />
@@ -121,30 +125,30 @@
       </div>
     </div>
 
-    <div class="content-section-a">
+    <div class="content-section-a" id="plans">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <h2 class="section-heading">۱. طرح ایده</h2>
+                    <h2 class="section-heading">ایده</h2>
                     <p class="lead">قبل از شروع کار، اعضای حاضر در جلسه به صورت نوبتی و در
                     زمان‌های ۲ دقیقه‌ای به طرح ایده خود می‌پردازند.
                     سپس به رای اکثریت یا چند طرح انتخاب می‌شود.
                     </p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <h2 class="section-heading">۲. انتخاب ایده‌های برتر</h2>
+                    <h2 class="section-heading">انتخاب</h2>
                     <p class="lead">پس از انتخاب ایده‌های برتر، اعضا می‌توانند به صورت
                     اختیاری در یکی از پروژه‌های برتر وارد و تیمی را برای 
                     پیاده‌سازی آن تشکیل دهند.</p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <h2 class="section-heading">۳. تشکیل گروه</h2>
+                    <h2 class="section-heading">تیم</h2>
                     <p class="lead">پس از انتخاب ایده‌های برتر، اعضا می‌توانند به صورت
                     اختیاری در یکی از پروژه‌های برتر وارد و تیمی را برای 
                     پیاده‌سازی آن تشکیل دهند.</p>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                    <h2 class="section-heading">۴. کار تیمی/پیاده‌سازی</h2>
+                    <h2 class="section-heading">پیاده‌سازی</h2>
                     <p class="lead">هکاتون ازینجا معنای عملی پیدا می‌کند.
                     شما به کمک اعضای تیم خود در ساعات آتی به پیاده سازی
                     پروژه خود مشغول خواهید شد. 
@@ -154,7 +158,7 @@
         </div>
     </div>
 
-    <div class="content-section-b">
+    <div class="content-section-b" id="timeline">
         <div class="container">
             <div class="row">
               <div class="text-center"></div>
@@ -183,15 +187,95 @@
         </div>
     </div>
     
-    <div class="content-section-a">
+    <div class="content-section-a" id="media">
+        <div class="container">
+            <div class="row">
+              
+              
+              <div class="container" style="margin-top:10px;">
+                  <div class="row form-group">
+                      <div class="col-xs-12 col-md-3">
+                          <div class="panel panel-default">
+                              <div class="panel-heading">
+                                  <h3 class="panel-title">پوستر هکاتون مشهدلاگ</h3>
+                              </div>
+                              <div class="panel-image">
+                                  <img src="media/poster-thumb.png" class="panel-image-preview" />
+                                  <label for="toggle-3"></label>
+                              </div>
+                              <input type="checkbox" id="toggle-3" class="panel-image-toggle">
+                              <div class="panel-body">
+                                  <!--<h4>پوستر هکاتون مشهدلاگ</h4>-->
+                                  <p>شما نیز می‌توانید حامی هکاتون مشهدلاگ باشید</p>
+                              </div>
+                              <div class="panel-footer text-center">
+                                  <a target="_new" href="media/poster.png"><span class="fa  fa-cloud-download"></span></a>
+                                  <a target="_new" href="https://www.facebook.com/sharer/sharer.php?u=http://hackaton.mashhadlug.org"><span class="fa fa-facebook"></span></a>
+                                  <a target="_new" href="https://twitter.com/home?status=http://hackaton.mashhadlug.org"><span class="fa  fa-twitter"></span></a>
+                                  <a target="_new" href="https://plus.google.com/share?url=http://hackaton.mashhadlug.org"><span class="fa fa-google-plus"></span></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-12 col-md-3">
+                          <div class="panel panel-default">
+                              <div class="panel-heading">
+                                  <h3 class="panel-title">پوستر هکاتون مشهدلاگ</h3>
+                              </div>
+                              <div class="panel-image">
+                                  <img src="media/poster-thumb.png" class="panel-image-preview" />
+                                  <label for="toggle-3"></label>
+                              </div>
+                              <input type="checkbox" id="toggle-3" class="panel-image-toggle">
+                              <div class="panel-body">
+                                  <!--<h4>پوستر هکاتون مشهدلاگ</h4>-->
+                                  <p>شما نیز می‌توانید حامی هکاتون مشهدلاگ باشید</p>
+                              </div>
+                              <div class="panel-footer text-center">
+                                  <a target="_new" href="media/poster.png"><span class="fa  fa-cloud-download"></span></a>
+                                  <a target="_new" href="https://www.facebook.com/sharer/sharer.php?u=http://hackaton.mashhadlug.org"><span class="fa fa-facebook"></span></a>
+                                  <a target="_new" href="https://twitter.com/home?status=http://hackaton.mashhadlug.org"><span class="fa  fa-twitter"></span></a>
+                                  <a target="_new" href="https://plus.google.com/share?url=http://hackaton.mashhadlug.org"><span class="fa fa-google-plus"></span></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-12 col-md-3">
+                          <div class="panel panel-default">
+                              <div class="panel-heading">
+                                  <h3 class="panel-title">پوستر هکاتون مشهدلاگ</h3>
+                              </div>
+                              <div class="panel-image">
+                                  <img src="media/poster-thumb.png" class="panel-image-preview" />
+                                  <label for="toggle-3"></label>
+                              </div>
+                              <input type="checkbox" id="toggle-3" class="panel-image-toggle">
+                              <div class="panel-body">
+                                  <!--<h4>پوستر هکاتون مشهدلاگ</h4>-->
+                                  <p>شما نیز می‌توانید حامی هکاتون مشهدلاگ باشید</p>
+                              </div>
+                              <div class="panel-footer text-center">
+                                  <a target="_new" href="media/poster.png"><span class="fa  fa-cloud-download"></span></a>
+                                  <a target="_new" href="https://www.facebook.com/sharer/sharer.php?u=http://hackaton.mashhadlug.org"><span class="fa fa-facebook"></span></a>
+                                  <a target="_new" href="https://twitter.com/home?status=http://hackaton.mashhadlug.org"><span class="fa  fa-twitter"></span></a>
+                                  <a target="_new" href="https://plus.google.com/share?url=http://hackaton.mashhadlug.org"><span class="fa fa-google-plus"></span></a>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+              </div>
+              
+              
+            </div>
+        </div>
+    </div>
+    
+    <div class="content-section-b" id="register">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <h2 class="section-heading">ثبت‌نام</h2>
                     <p class="lead">
                       هکاتون طی ۲ روز از تاریخ ۱۴ الی ۱۵ خرداد ۱۳۹۳ در محل
-                      شرکت پیشگامان گسترش متن‌باز واقع در خیابان راهنمایی ۲،
-                      پلاک ۱۱۰ واحد ۹ برگزار می‌شود.
+                      شرکت پیشگامان گسترش متن‌باز برگزار می‌شود.
                       
                       با توجه به محدود بودن ظرفیت و امکانات، لطفا هر چه سریع‌تر
                       ثبت‌نام نمایید. در صورت پر شدن ظرفیت از پذیرش شما
@@ -216,26 +300,36 @@
         </div>
     </div>
     
-    <div class="content-section-b">
+    <div class="content-section-a" id="sponsors">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                     <h2 class="section-heading">حامیان</h2>
                     <p class="lead">
                       هکاتون مشهدلاگ بدون همکاری اعضای گروه کاربران لینوکس مشهد و
-                      همچنین گروه کاربران پایتون مشهد برگزار تنی‌شود.
-                      همچنین جا دارد از مدیران محترم شرکت POS نیز بابت در
+                      همچنین گروه کاربران پایتون مشهد برگزار نمی‌شد.
+                      همچنین جا دارد از مدیران محترم شرکت «پیشگامان گسترش متن‌باز» نیز بابت در
                       اختیار قرار دادن مکان و تجهیزات مناسب جهت برگزاری
                       این رویداد تشکر ویژه به عمل آورد.
                     </p>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <img class="img-responsive" src="img/phones.png" alt="">
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                    <a href="http://ossolutions.ir/" target="_new">
+                      <img class="img-resonsive" src="img/POS.png" alt="پیشگامان گسترش متن‌باز" />
+                    </a>
+                    <a href="http://mashhadlug.org" target="_new">
+                      <img class="img-resonsive" src="img/MashhadLUG.png" alt="گروه کاربران لینوکس مشهد" />
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+    
+    <div class="content-section-b" id="map" style="padding:0px; margin:0px;">
+        <iframe width="100%" height="350px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=59.56728100776672%2C36.29775541716528%2C59.5695447921753%2C36.30030621722206&amp;layer=mapnik&amp;marker=36.29903082762067%2C59.56841289997101" style="border: 1px solid black"></iframe>
+    </div>
 
+    <!--
     <div class="banner">
         <div class="container">
             <div class="row">
@@ -255,7 +349,8 @@
             </div>
         </div>
     </div>
-
+    -->
+    <!--
     <footer>
         <div class="container">
             <div class="row">
@@ -278,7 +373,7 @@
             </div>
         </div>
     </footer>
-
+    -->
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
@@ -286,7 +381,62 @@
     <script src="js/jquery.countdown.min.js"></script>
     <!--<script src="js/jquery.countdown-fa.js"></script>-->
     <script type="text/javascript">
+      
       $(document).ready(function(){
+        // Bootstrap 3.0 scrollspy responsive offsets
+        // http://stackoverflow.com/questions/18244186/bootstrap-3-0-scrollspy-responsive-offsets
+        var $body   = $('body'), 
+          $navbar = $('.navbar'),
+          offset  = $navbar.outerHeight();
+
+        // fix body padding (in case navbar size is different than the padding)
+        $body.css('padding-top', offset);
+        // Enable scrollSpy with correct offset based on height of navbar
+        $body.scrollspy({target: '#navigation-bar', offset: offset});
+        
+        // function to do the tweaking
+        function fixSpy() {
+            // grab a copy the scrollspy data for the element
+            var data = $body.data('bs.scrollspy');
+            // if there is data, lets fiddle with the offset value
+            if (data) {
+                // get the current height of the navbar
+                offset = $navbar.outerHeight();
+                // adjust the body's padding top to match
+                $body.css('padding-top', offset);
+                // change the data's offset option to match
+                data.options.offset = offset
+                // now stick it back in the element
+                $body.data('bs.scrollspy', data);
+                // and finally refresh scrollspy
+                $body.scrollspy('refresh');
+            }
+        }
+
+        // Now monitor the resize events and make the tweaks
+        var resizeTimer;
+        $(window).resize(function() {
+            console.log('RESIZE')
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(fixSpy, 200);
+        });
+        
+        // Smooth Scrolling
+        // http://css-tricks.com/snippets/jquery/smooth-scrolling/
+        $('#navigation-bar a').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              var offset = 
+              $('html,body').animate({
+                scrollTop: target.offset().top - $navbar.outerHeight() + 2
+              }, 1000);
+              return false;
+            }
+          }
+        });
+        
         $('.event-timer').each(function(){
           var due_date_attr = $(this).attr('data-time')
           var due_date_timestamp = Date.parse(due_date_attr)
