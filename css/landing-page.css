@@ -497,3 +497,11 @@ ul.timeline > li > .timeline-panel:after {
 #sponsors a img {
   width: 92px;
 }
+
+#register {
+  background: url('../img/banner-bg.jpg') no-repeat scroll center center / cover transparent;
+  color: white;
+}
+#register h2{
+  line-height: 1.5em;
+}
