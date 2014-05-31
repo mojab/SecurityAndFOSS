@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<rss version="2.0">
+  <channel>
+    <title>{{ page.title }}</title>
+    <link>{{ page.domain }}</link>
+    <description>{{ page.description }}</description>
+    {% for entry in source.src_files('source/', true, true) | sort_by_published(true) %}
+      {% if entry.name not in ['rss.md'] %}
+      <item>
+        {% if 'timeline' in entry.link %}
+        <title>خط زمانی: ساعت {{ entry.time }} روز {{ entry.date }}</title>
+        {% else %}
+        <title>{{ entry.title if entry.title != None else entry.content }}</title>
+        {% endif %}
+        <link>{{ entry.url if entry.url != None else page.domain }}</link>
+        <description><![CDATA[{{ entry.content | markdown }}]]></description>
+      </item>
+    {% endif %}
+  {% endfor %}
+  </channel>
+</rss>
