@@ -250,6 +250,7 @@
                         <div style="display: none;" class="alert alert-success">درخواست ثبت‌نام شما با موفقیت ارسال شد</div>
                         <div style="display: none;" class="alert alert-danger">خطا در ارسال درخواست ثبت‌نام</div>
                         <div style="display: none;" class="alert alert-warning">اطلاعات فرم نامعتبر می‌باشد</div>
+                        <div style="display: none;" class="alert alert-info">لطفا پلاگین‌هایی که موجب غیرفعال شدن کارایی بخشی از اسکریپت جاوا اسکریپت می‌شود را موقت غیرفعال کنید</div>
                         <noscript>
                           <div class="alert alert-warning">نیاز به فعال‌سازی جاوا اسکریپت دارید</div>
                         </noscript>
@@ -356,7 +357,6 @@
         // Now monitor the resize events and make the tweaks
         var resizeTimer;
         $(window).resize(function() {
-            console.log('RESIZE')
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(fixSpy, 200);
         });
@@ -388,48 +388,56 @@
           });
         })
       
-        // Initialize Parse with your Parse application & javascript keys
-        Parse.initialize("1wSgiz3wLlJhrIbK1gmRbjV3w7fv0ohfzdgnrY2h", "4Vw3DEjS4j51MUGnNOlX0ax8eW4457fDP6TcllvG");
-         
-        // Setup the form to watch for the submit event
-        $('form').submit(function(e){
-          e.preventDefault();
-          
-          // Grab the elements from the form to make up
-          // an object containing name, email and message
-          var data = {
-            // name: document.getElementById('name').value,
-            name: document.getElementById('InputName').value,
-            email: document.getElementById('InputEmail').value,
-            message: document.getElementById('InputMessage').value
-          }
-          
-          $('form .form-group.alerts .alert').hide()
-          var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-          if ((data['email'].length == 0 && data['message'].length == 0)||
-              (!re.test(data['email']))){
-            $('form .form-group.alerts .alert.alert-warning').fadeIn(250);
-            return false
-          }
-          
-          $('form input[type=submit]').button('loading')
-          // Run our Parse Cloud Code and
-          // pass our 'data' object to it
-          Parse.Cloud.run("sendEmail", data, {
-            success: function(object) {
-              console.log('sent');
-              $('form .form-group.alerts .alert.alert-success').fadeIn(250);
-              $('form input[type=submit]').button('reset')
-              $('form')[0].reset()
-            },
+        $('form .form-group.alerts .alert').hide()
+        try {
+          // Initialize Parse with your Parse application & javascript keys
+          Parse.initialize("1wSgiz3wLlJhrIbK1gmRbjV3w7fv0ohfzdgnrY2h", "4Vw3DEjS4j51MUGnNOlX0ax8eW4457fDP6TcllvG");
+          // Setup the form to watch for the submit event
+          $('form').submit(function(e){
+            e.preventDefault();
             
-            error: function(object, error) {
-              console.log(error);
-              $('form .form-group.alerts .alert.alert-danger').fadeIn(250);
-              $('form input[type=submit]').button('reset')
+            // Grab the elements from the form to make up
+            // an object containing name, email and message
+            var data = {
+              // name: document.getElementById('name').value,
+              name: document.getElementById('InputName').value,
+              email: document.getElementById('InputEmail').value,
+              message: document.getElementById('InputMessage').value
             }
+            
+            $('form .form-group.alerts .alert').hide()
+            var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if ((data['email'].length == 0 && data['message'].length == 0)||
+                (!re.test(data['email']))){
+              $('form .form-group.alerts .alert.alert-warning').fadeIn(250);
+              return false
+            }
+            
+            $('form input[type=submit]').button('loading')
+            // Run our Parse Cloud Code and
+            // pass our 'data' object to it
+            Parse.Cloud.run("sendEmail", data, {
+              success: function(object) {
+                console.log('sent');
+                $('form .form-group.alerts .alert.alert-success').fadeIn(250);
+                $('form input[type=submit]').button('reset')
+                $('form')[0].reset()
+              },
+              
+              error: function(object, error) {
+                console.log(error);
+                $('form .form-group.alerts .alert.alert-danger').fadeIn(250);
+                $('form input[type=submit]').button('reset')
+              }
+            });
           });
-        });
+        }
+        catch(err) {
+          $('form .form-group.alerts .alert.alert-info').fadeIn(250);
+          $('form input[type=submit]').button('reset');
+          console.log(err)
+        }
+         
         
       })
     </script>
