@@ -181,15 +181,18 @@ footer {
 	padding: 50px 0px 40px;
   text-align: center;
   line-height: 1.2em;
-  margin-top: -10px;
 }
+
 footer ul{
   margin-top: 15px;
+  padding: 0px;
 }
+
 footer a{
   color: #767676;
   font-size: 2em;
 }
+
 footer a:hover {
   text-decoration: none;
   color: white;
@@ -420,12 +423,14 @@ ul.timeline > li > .timeline-panel:after {
   color: #FFB52E;
   font-size: 2em;
 }
+
 .event-timer-printable {
   color: #FFB52E;
   font-weight: bold;
   font-size: 2em;
   text-shadow: 2px -2px #464646;
   margin-top: 30px;
+  line-height: 1.5em;
 }
 
 
@@ -433,6 +438,7 @@ ul.timeline > li > .timeline-panel:after {
 .panel-image {
     position: relative;   
 }
+
 .panel-image img.panel-image-preview {
     width: 100%;
 	border-radius: 4px 4px 0px 0px;
@@ -477,4 +483,17 @@ ul.timeline > li > .timeline-panel:after {
     padding: 0px 10px;
 	font-size: 1.3em;
 	color: rgb(100, 100, 100);
+}
+
+#sponsors {
+  margin-top: -12px;
+}
+#sponsors a {
+  display: inline-block;
+}
+#sponsors a:hover {
+  text-decoration: none;
+}
+#sponsors a img {
+  width: 92px;
 }
