@@ -408,6 +408,7 @@
               console.log('sent');
               $('form .form-group.alerts .alert.alert-success').fadeIn(250);
               $('form input[type=submit]').button('reset')
+              $('form')[0].reset()
             },
             
             error: function(object, error) {
