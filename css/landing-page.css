@@ -45,12 +45,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro-header {
-	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-	padding-bottom: 50px;
-	color: #f8f8f8;
-	background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: url(../img/backg.jpg) no-repeat center center;
 	background-size: cover;
+	color: #f8f8f8;
 	text-align: center;
+}
+
+.intro-header div.bg {
+    background: rgba(0,0,0,1);
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,.75) 0%, rgba(0,0,0,.75) 50%, rgba(0,0,0,0.5) 100%);
+    background: -webkit-gradient(left bottom, left top, color-stop(0%, rgba(0,0,0,.75)), color-stop(50%, rgba(0,0,0,.75)), color-stop(100%, rgba(0,0,0,0.5)));
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,.75) 0%, rgba(0,0,0,.75) 50%, rgba(0,0,0,0.5) 100%);
+    background: -o-linear-gradient(bottom, rgba(0,0,0,.75) 0%, rgba(0,0,0,.75) 50%, rgba(0,0,0,0.5) 100%);
+    background: -ms-linear-gradient(bottom, rgba(0,0,0,.75) 0%, rgba(0,0,0,.75) 50%, rgba(0,0,0,0.5) 100%);
+    background: linear-gradient(to top, rgba(0,0,0,.75) 0%, rgba(0,0,0,.75) 50%, rgba(0,0,0,0.5) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
 }
 
 .intro-message {
@@ -62,8 +71,8 @@ h1, h2, h3, h4, h5, h6 {
 .intro-message > h1 {
 	margin: 0;
 	font-size: 5em;
-	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-  line-height: 1.5em;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0,1);
+    line-height: 1.5em;
 }
 
 .intro-divider {
@@ -73,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro-message > h3 {
-	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
   line-height: 1.5em;
 }
 
@@ -427,7 +436,7 @@ ul.timeline > li > .timeline-panel:after {
   color: #FFB52E;
   font-weight: bold;
   font-size: 2em;
-  text-shadow: 2px -2px #464646;
+  text-shadow: 2px 1px #000;
   margin-top: 30px;
   line-height: 1.5em;
 }
@@ -500,6 +509,7 @@ ul.timeline > li > .timeline-panel:after {
 #register {
   background: url('../img/banner-bg.jpg') no-repeat scroll center center / cover transparent;
   color: white;
+
 }
 #register h2{
   line-height: 1.5em;
