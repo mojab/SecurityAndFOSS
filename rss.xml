@@ -3,12 +3,22 @@
   <channel>
     <title>دومین هکاتون اختصاصی گروه کاربران لینوکس مشهد</title>
     <link>http://hackathon.mashhadlug.org</link>
-    <description>با اخبار اولین هکاتون مشهدلاگ با ما همراه باشید</description>
+    <description>با اخبار دومین هکاتون مشهدلاگ با ما همراه باشید</description>
 
       
       <item>
         
-        <title>خط زمانی: ساعت 720 روز یکشنبه ۱۲ بهمن ۱۳۹۳</title>
+        <title>خط زمانی: ساعت 720 روز شنبه ۱۸ بهمن ۱۳۹۳</title>
+        
+        <link>http://hackathon.mashhadlug.org</link>
+        <description><![CDATA[<p>ثبت نام شروع شده است . در صورتی که نتوانستیم برای این دوره با هم باشیم ، شما را در دوره های بعدی مطلع می کنیم . با تشکر</p>]]></description>
+      </item>
+    
+  
+
+      <item>
+        
+        <title>خط زمانی: ساعت 1380 روز یکشنبه ۱۲ بهمن ۱۳۹۳</title>
         
         <link>http://hackathon.mashhadlug.org</link>
         <description><![CDATA[<p>هکاتون راس ساعت ۹ صبح روز چهارشنبه برگذار خواهد شد . مکان هکاتون متعاقبا خدمت دوستان اعلام خواهد شد . با تشکر</p>]]></description>
@@ -23,7 +33,7 @@
         <title>دومین هکاتون اختصاصی گروه کاربران لینوکس مشهد</title>
         
         <link>http://hackathon.mashhadlug.org</link>
-        <description><![CDATA[<p>هکاتون مشهد‌لاگ طی ۲ روز از تاریخ  ۲۲ الی ۲۴ بهمن ۱۳۹۳ برگزار می‌شود. با توجه به محدود بودن ظرفیت و امکانات، به درخواست‌های ثبت‌نام به ترتیب زمان ارسالی آنها پاسخ داده خواهد شد. در صورت پر شدن ظرفیت از پذیرش شما متاسفانه در این دوره معذوریم.</p>]]></description>
+        <description><![CDATA[<p>هکاتون مشهد‌لاگ طی ۲ روز از تاریخ  ۲۳ الی ۲۴ بهمن ۱۳۹۳ برگزار می‌شود. با توجه به محدود بودن ظرفیت و امکانات، به درخواست‌های ثبت‌نام به ترتیب زمان ارسالی آنها پاسخ داده خواهد شد. در صورت پر شدن ظرفیت از پذیرش شما متاسفانه در این دوره معذوریم.</p>]]></description>
       </item>
     
   
@@ -32,17 +42,7 @@
         
         <title>پوستر هکاتون مشهدلاگ</title>
         
-        <link>http://hackathon.mashhadlug.org/media/poster/poster.png</link>
-        <description><![CDATA[<p>شما نیز می‌توانید با اطلاع رسانی، حامی ما باشید.</p>]]></description>
-      </item>
-    
-  
-      
-      <item>
-        
-        <title>پوستر هکاتون مشهدلاگ</title>
-        
-        <link>http://hackathon.mashhadlug.org/media/poster/poster2.png</link>
+        <link>http://hackathon.mashhadlug.org/media/poster/poster.jpg</link>
         <description><![CDATA[<p>شما نیز می‌توانید با اطلاع رسانی، حامی ما باشید.</p>]]></description>
       </item>
     
