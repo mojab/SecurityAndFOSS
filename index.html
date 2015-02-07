@@ -11,10 +11,10 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <title>دومین هکاتون اختصاصی گروه کاربران لینوکس و پایتون مشهد</title>
-    
+
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml" />
-    
+
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
@@ -82,7 +82,7 @@
                         
                         <p class="text-center event-timer-printable">پنج شنبه ۲۳ الی جمعه ۲۴ بهمن ۱۳۹۳</p>
                       
-                        
+
                         <!--<ul class="list-inline intro-social-buttons">
                             <li><a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                             </li>
@@ -174,7 +174,7 @@
                             <h3 class="timeline-time">1380</h3>
                             <p class="timeline-date">یکشنبه ۱۲ بهمن ۱۳۹۳</p>
                           </div>
-                          <div class="timeline-description col-md-9 col-sm-9 col-xs-12"><p>هکاتون راس ساعت ۹ صبح روز چهارشنبه برگذار خواهد شد . مکان هکاتون متعاقبا خدمت دوستان اعلام خواهد شد . با تشکر</p></div>
+                          <div class="timeline-description col-md-9 col-sm-9 col-xs-12"><p>هکاتون راس ساعت ۹ صبح روز چهارشنبه برگذار خواهد شد . مکان هکاتون  در محل آموزشگاه صدرا به آدرس  حاشیه بلوار فرودگاه  ، بین جمهوری اسلامی  ۲۳و ۲۵  روبروی بانک صادرات  خواهد بود . با تشکر</p></div>
                         </div>
                       </div>
                       <p class="text-muted" style="position: relative; top: 45px; text-align: left; font-size: 0.7em;">توسط onlymaj</p>
@@ -199,11 +199,11 @@
                   </li>
                   
               </ul>
-              
+
             </div>
         </div>
     </div>
-    
+
     <div class="content-section-a" id="media">
         <div class="container">
             <div class="row">
@@ -237,7 +237,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="content-section-b" id="register">
         <div class="container">
             <div class="row">
@@ -247,9 +247,9 @@
 
                       هکاتون مشهد‌لاگ طی ۲ روز از تاریخ ۲۳ الی ۲۴ بهمن ۱۳۹۳
                      برگزار می‌شود.
-                      
+
                       با توجه به محدود بودن ظرفیت و امکانات، به درخواست‌های ثبت‌نام به ترتیب زمان ارسالی آنها پاسخ داده خواهد شد. در صورت پر شدن ظرفیت از پذیرش شما متاسفانه در این دوره معذوریم.
-                      
+
                       همچنین در صورت بروز مشکل در ارسال درخواست ثبت‌نام، می‌توانید از طریق فرم «تماس» <a href="http://mashhadlug.org/fa/contact" target="_new">وبسایت گروه کاربران لینوکس مشهد</a> مشکل را گزارش دهید.
                     </p>
                 </div>
@@ -285,7 +285,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="content-section-b" id="map" style="padding:0px; margin:0px;">
         <iframe width="100%" height="350px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=59.59813714027405%2C36.264146244851176%2C59.60224628448486%2C36.26665489171047&amp;layer=mapnik" style="border: 0px;"></iframe>
     </div>
@@ -310,7 +310,7 @@
             </div>
         </div>
     </div>
-    
+
 
     <footer>
         <div class="container">
@@ -335,7 +335,7 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
@@ -343,12 +343,12 @@
     <script src="js/jquery.countdown.min.js"></script>
     <!--<script src="js/jquery.countdown-fa.js"></script>-->
     <script src="js/parse-1.2.16.min.js"></script>
-    
+
     <script type="text/javascript">
       $(document).ready(function(){
         // Bootstrap 3.0 scrollspy responsive offsets
         // http://stackoverflow.com/questions/18244186/bootstrap-3-0-scrollspy-responsive-offsets
-        var $body   = $('body'), 
+        var $body   = $('body'),
           $navbar = $('.navbar'),
           offset  = $navbar.outerHeight();
 
@@ -356,7 +356,7 @@
         $body.css('padding-top', offset);
         // Enable scrollSpy with correct offset based on height of navbar
         $body.scrollspy({target: '#navigation-bar', offset: offset});
-        
+
         // function to do the tweaking
         function fixSpy() {
             // grab a copy the scrollspy data for the element
@@ -382,7 +382,7 @@
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(fixSpy, 200);
         });
-        
+
         // Smooth Scrolling
         // http://css-tricks.com/snippets/jquery/smooth-scrolling/
         $('#navigation-bar a').click(function() {
@@ -390,7 +390,7 @@
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
             if (target.length) {
-              var offset = 
+              var offset =
               $('html,body').animate({
                 scrollTop: target.offset().top - $navbar.outerHeight() + 2
               }, 1000);
@@ -398,7 +398,7 @@
             }
           }
         });
-        
+
         $('.event-timer').each(function(){
           var due_date_attr = $(this).attr('data-time')
           var due_date_timestamp = Date.parse(due_date_attr)
@@ -409,16 +409,16 @@
             layout: $(this).html()
           });
         })
-      
+
 
         $('form .form-group.alerts .alert').hide()
         try {
           // Initialize Parse with your Parse application & javascript keys
-          Parse.initialize("yrb3JpBZdVHa9HAiziZzpHjQ03fqyOB6ZmX0MCsP", "Z6nGxNQNOtZiXsn7uXUDiVIBDgdvIxZqcuSdocdW");
+          Parse.initialize("1wSgiz3wLlJhrIbK1gmRbjV3w7fv0ohfzdgnrY2h", "4Vw3DEjS4j51MUGnNOlX0ax8eW4457fDP6TcllvG");
           // Setup the form to watch for the submit event
           $('form').submit(function(e){
             e.preventDefault();
-            
+
             // Grab the elements from the form to make up
             // an object containing name, email and message
             var data = {
@@ -427,7 +427,7 @@
               email: document.getElementById('InputEmail').value,
               message: document.getElementById('InputMessage').value
             }
-            
+
             $('form .form-group.alerts .alert').hide()
             var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             if ((data['email'].length == 0 && data['message'].length == 0)||
@@ -435,7 +435,7 @@
               $('form .form-group.alerts .alert.alert-warning').fadeIn(250);
               return false
             }
-            
+
             $('form input[type=submit]').button('loading')
             // Run our Parse Cloud Code and
             // pass our 'data' object to it
@@ -446,7 +446,7 @@
                 $('form input[type=submit]').button('reset')
                 $('form')[0].reset()
               },
-              
+
               error: function(object, error) {
                 console.log(error);
                 $('form .form-group.alerts .alert.alert-danger').fadeIn(250);
@@ -460,8 +460,8 @@
           $('form input[type=submit]').button('reset');
           console.log(err)
         }
-         
-        
+
+
       })
     </script>
 </body>
